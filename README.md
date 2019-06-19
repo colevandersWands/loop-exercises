@@ -21,7 +21,6 @@
 
 ### For
 
-[```for``` parsonized](https://janke-learning.github.io/parsonizer/?snippet=%2F%2F%20for%20loop%0Afor%20%28%20let%20stepper%20%3D%200%3B%20stepper%20%3C%204%3B%20stepper%2B%2B%20%29%20%7B%0A%20%20%2F%2F%20body%0A%7D%0A%0A%0A)
 
 __[From w3schools](https://www.w3schools.com/js/js_loop_for.asp)__:
 > The for loop has the following syntax:
@@ -34,8 +33,8 @@ for (statement 1; statement 2; statement 3) {
 > Statement 2 defines the condition for executing the code block.  
 > Statement 3 is executed (every time) after the code block has been executed.  
 
-
-> [block scope in for loops](http://www.pythontutor.com/live.html#code=for%20%28var%20x%20%3D%200%3B%20x%20%3C%202%3B%20x%2B%2B%29%20%7B%0A%20%20console.log%28%22x%3A%20%22,%20x%29%3B%0A%7D%0A%0Afor%20%28let%20y%20%3D%200%3B%20y%20%3C%202%3B%20y%2B%2B%29%20%7B%0A%20%20console.log%28%22y%3A%20%22,%20y%29%3B%0A%7D&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false) - JS does an unexpected thing by creating 2 blocks while stepping through the loop. for now just know that this happens, you can understand why later when you learn about closure.
+* [```for``` loop parsonized](https://janke-learning.github.io/parsonizer/?snippet=%2F%2F%20for%20loop%0Afor%20%28%20let%20stepper%20%3D%200%3B%20stepper%20%3C%204%3B%20stepper%2B%2B%20%29%20%7B%0A%20%20%2F%2F%20body%0A%7D%0A%0A%0A)
+* [block scope in for loops](http://www.pythontutor.com/live.html#code=for%20%28var%20x%20%3D%200%3B%20x%20%3C%202%3B%20x%2B%2B%29%20%7B%0A%20%20console.log%28%22x%3A%20%22,%20x%29%3B%0A%7D%0A%0Afor%20%28let%20y%20%3D%200%3B%20y%20%3C%202%3B%20y%2B%2B%29%20%7B%0A%20%20console.log%28%22y%3A%20%22,%20y%29%3B%0A%7D&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false) - JS does an unexpected thing by creating 2 blocks while stepping through the loop. for now just know that this happens, you can understand why later when you learn about closure.
 
 _original for loop_
 ```js
@@ -80,6 +79,8 @@ _refactored to do-while_
 
 
 [TOP](#loop-refactors)
+
+---
 
 ### While 
 
@@ -129,6 +130,7 @@ _refactored to do-while_
 
 [TOP](#loop-refactors)
 
+---
 
 ### Do-While
 
@@ -206,7 +208,7 @@ _refactored to for_
 
 ### For to While
 
-#### for -> while 1
+### for -> while 1
 
 [practice on pytut](http://www.pythontutor.com/live.html#code=%7B%0A%20%20let%20result%20%3D%200%3B%0A%20%20for%20%28let%20i%20%3D%201%3B%20i%20%3C%2010%3B%20i%20%2B%3D%20result%29%20%7B%0A%20%20%20%20result%20%2B%3D%20i%3B%0A%20%20%20%20console.log%28i%29%3B%0A%20%20%7D%0A%7D%0A//%20refactor%20to%20while%20loop%0A%0Awhile%20%28%29%20%7B%0A%20%20%0A%7D&cumulative=false&curInstr=15&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)  
 
@@ -232,7 +234,9 @@ _refactor to while_
 
 [parsonized solution](https://janke-learning.github.io/parsonizer/?snippet=let%20result%20%3D%200%3B%0Alet%20i%20%3D%201%3B%0Awhile%20%28%20i%20%3C%2010%20%29%20%7B%0A%20%20result%20%2B%3D%20i%3B%0A%20%20console.log%28i%29%3B%0A%20%20i%20%2B%3D%20result%3B%0A%7D)
 
-#### for -> while 2
+---
+
+### for -> while 2
 
 [practice on pytut](http://www.pythontutor.com/live.html#code=for%20%28let%20i%20%3D%20-3%3B%20i%20%3D%3D%3D%2010%20%7C%7C%20i%20%3C%2020%3B%20i%20*%3D%20-1.5%29%20%7B%0A%20%20console.log%28i%29%3B%0A%7D%0A%0A//%20refactor%20to%20while%20loop%0A%0Awhile%20%28%29%20%7B%0A%20%20%0A%7D&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)  
 
@@ -256,7 +260,9 @@ _refactor to while_
 
 [parsonized solution](https://janke-learning.github.io/parsonizer/?snippet=let%20i%20%3D%20-3%3B%0Awhile%20%28i%20%3D%3D%3D%2010%20%7C%7C%20i%20%3C%2020%29%20%7B%0A%20%20console.log%28i%29%3B%0A%20%20i%20*%3D%20-1.5%3B%0A%7D)
 
-#### for -> while 3
+---
+
+### for -> while 3
 
 [practice on pytut](http://www.pythontutor.com/live.html#code=%7B%0A%20%20for%20%28let%20i%20%3D%200,%20j%20%3D%2010%3B%20i%20!%3D%3D%20j%3B%20i%2B%2B,%20j--%29%20%7B%0A%20%20%20%20console.log%28%22i%3A%20%22,%20i%29%3B%0A%20%20%20%20console.log%28%22j%3A%20%22,%20j%29%3B%0A%20%20%20%20console.log%28%22i%20%2B%20j%3A%20%22,%20i%20%2B%20j%29%3B%0A%20%20%7D%0A%7D%0A%0A//%20refactor%20to%20while%20loop%0A%0Awhile%20%28%29%20%7B%0A%20%20%0A%7D&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)  
 
@@ -282,8 +288,10 @@ _refactor to while_
 
 [parsonized solution](https://janke-learning.github.io/parsonizer/?snippet=let%20i%20%3D%200%2C%20j%20%3D%2010%3B%0Awhile%20%28%20i%20!%3D%3D%20j%20%29%20%7B%0A%20%20console.log%28%22i%3A%20%22%2C%20i%29%3B%0A%20%20console.log%28%22j%3A%20%22%2C%20j%29%3B%0A%20%20console.log%28%22i%20%2B%20j%3A%20%22%2C%20i%20%2B%20j%29%3B%0A%20%20i%2B%2B%2C%20j--%3B%0A%7D)
 
+---
 
-#### for -> while 4
+
+### for -> while 4
 
 > The logic in this loop is difficult to understand; The goal of these refactors is to recognize the __form__ of your code without worrying about the content.  You can easily complete this exercise without understanding what's happening!  This is the power of learning reliable refactoring patterns
 
@@ -313,11 +321,14 @@ _refactor to while_
 [parsonized solution](https://janke-learning.github.io/parsonizer/?snippet=const%20mixitup%20%3D%20false%3B%0Alet%20val%3B%0Alet%20i%20%3D%20''%3B%0Awhile%20%28%20!!i%20!%3D%3D%20true%20%29%20%7B%0A%20%20val%20%3D%20!i%20%7C%7C%20mixitup%20*%20i%3B%0A%20%20console.log%28!!val%29%3B%0A%20%20i%20%3D%20%2Bval%3B%0A%7D)
 
 
+
 [TOP](#loop-refactors)
+
+---
 
 ### While to For
 
-#### while -> for 1
+### while -> for 1
 
 [practice on pytut](http://www.pythontutor.com/live.html#code=let%20x%20%3D%209%3B%0Awhile%20%28x%20%3E%202%29%20%7B%0A%20%20console.log%28x%20*%203%29%3B%0A%20%20x--%3B%0A%7D%0A%0A//%20refactor%20to%20for%20loop%0A%0Afor%20%28%20%3B%20%3B%20%29%20%7B%0A%20%20%0A%7D&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)  
 [parsonized while loop](https://janke-learning.github.io/parsonizer/?snippet=let%20x%20%3D%209%3B%0Awhile%20%28x%20%3E%202%29%20%7B%0A%20%20console.log%28x%20*%203%29%3B%0A%20%20x--%3B%0A%7D)
@@ -342,8 +353,9 @@ _refactor to for_
 }
 ```
 
+---
 
-#### while -> for 2
+### while -> for 2
 
 > the [```++``` operator](https://github.com/janke-learning/expanding/blob/master/worked-in-place-operators.md) does two things in one step, it increments it's variable and returns a value.  When used in a while loop condition it does the work of the second & third parts of a for loop statement. 
 
@@ -369,7 +381,10 @@ _refactor to for_
 }
 ```
 
-#### while -> for 3
+
+---
+
+### while -> for 3
 
 > for this refactor, write your for loop without using [```++``` operator](https://github.com/janke-learning/expanding/blob/master/worked-in-place-operators.md) in the condition check. we've started the refactor so you can get the idea
 
@@ -395,7 +410,9 @@ _refactor to for_
 }
 ```
 
-#### while -> for 4
+---
+
+### while -> for 4
 
 > for this refactor, write your for loop without using [```++``` operator](https://github.com/janke-learning/expanding/blob/master/worked-in-place-operators.md) in the condition check. we're not starting this one for you
 
