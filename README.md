@@ -33,6 +33,7 @@ for (statement 1; statement 2; statement 3) {
 > Statement 2 defines the condition for executing the code block.  
 > Statement 3 is executed (every time) after the code block has been executed.  
 
+* [study ```for``` on pytut](http://www.pythontutor.com/live.html#code=//%20for%20loop%0Afor%20%28%20let%20stepper%20%3D%200%3B%20stepper%20%3C%204%3B%20stepper%2B%2B%20%29%20%7B%0A%20%20//%20body%0A%7D%0A%0A%0A&cumulative=false&curInstr=9&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
 * [```for``` loop parsonized](https://janke-learning.github.io/parsonizer/?snippet=%2F%2F%20for%20loop%0Afor%20%28%20let%20stepper%20%3D%200%3B%20stepper%20%3C%204%3B%20stepper%2B%2B%20%29%20%7B%0A%20%20%2F%2F%20body%0A%7D%0A%0A%0A)
 * [block scope in for loops](http://www.pythontutor.com/live.html#code=for%20%28var%20x%20%3D%200%3B%20x%20%3C%202%3B%20x%2B%2B%29%20%7B%0A%20%20console.log%28%22x%3A%20%22,%20x%29%3B%0A%7D%0A%0Afor%20%28let%20y%20%3D%200%3B%20y%20%3C%202%3B%20y%2B%2B%29%20%7B%0A%20%20console.log%28%22y%3A%20%22,%20y%29%3B%0A%7D&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false) - JS does an unexpected thing by creating 2 blocks while stepping through the loop. for now just know that this happens, you can understand why later when you learn about closure.
 
@@ -84,7 +85,8 @@ _refactored to do-while_
 
 ### While 
 
-[```while``` parsonized](https://janke-learning.github.io/parsonizer/?snippet=%2F%2F%20while%20loop%0Alet%20stepper%20%3D%200%3B%0Awhile%20%28stepper%20%3C%204%29%20%7B%0A%20%20%2F%2F%20body%0A%20%20stepper%2B%2B%3B%0A%7D%0A%0A%0A)
+* [```while``` on pytut](http://www.pythontutor.com/live.html#code=//%20while%20loop%0Alet%20stepper%20%3D%200%3B%0Awhile%20%28%20%20stepper%20%3C%204%20%29%20%7B%0A%20%20//%20body%0A%20%20stepper%2B%2B%3B%3B%0A%7D%0A%0A%0A&cumulative=false&curInstr=10&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
+* [```while``` parsonized](https://janke-learning.github.io/parsonizer/?snippet=%2F%2F%20while%20loop%0Alet%20stepper%20%3D%200%3B%0Awhile%20%28stepper%20%3C%204%29%20%7B%0A%20%20%2F%2F%20body%0A%20%20stepper%2B%2B%3B%0A%7D%0A%0A%0A)
 
 _original while loop_
 ```js
@@ -134,7 +136,8 @@ _refactored to do-while_
 
 ### Do-While
 
-[```do-while``` parsonized](https://janke-learning.github.io/parsonizer/?snippet=%2F%2F%20do-while%20loop%0Alet%20stepper%20%3D%200%3B%0Ado%20%7B%0A%20%20%2F%2F%20body%0A%20%20stepper%2B%2B%3B%0A%7D%20while%20%28stepper%20%3C%204%29%3B%0A%0A%0A)
+* [```do-while``` on pytut](http://www.pythontutor.com/live.html#code=//%20do-while%20loop%0Alet%20stepper%20%3D%200%3B%0Ado%20%7B%0A%20%20//%20body%0A%20%20stepper%2B%2B%3B%0A%7D%20while%20%28stepper%20%3C%204%29%3B%0A%0A%0A&cumulative=false&curInstr=9&heapPrimitives=nevernest&mode=display&origin=opt-live.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false)
+* [```do-while``` parsonized](https://janke-learning.github.io/parsonizer/?snippet=%2F%2F%20do-while%20loop%0Alet%20stepper%20%3D%200%3B%0Ado%20%7B%0A%20%20%2F%2F%20body%0A%20%20stepper%2B%2B%3B%0A%7D%20while%20%28stepper%20%3C%204%29%3B%0A%0A%0A)
 
 _original do-while_
 ```js
