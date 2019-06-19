@@ -1,8 +1,16 @@
 # Loop Refactors
 
+At it's simplist _refactoring_ is rewriting code while keeping it's original behavior.  In the exercises and examples below you can test your refactors by pasting & running the original code in the console, then pasting & running your refactor in console.  If both snippets log the exact same messages you have successfully completed the exercise!
 
+Learning to refactor loops is one of the best ways to learn how they work without struggling to solve code challenges.  As you practice shifting between ```while``` and ```for``` loops you'll begin to recognize the general principles of iteration:
+1. initial value
+1. advancing operation
+1. end condition
+
+Learning to identify these steps and rewrite loops in different ways will help you with debugging, problem solving & understanding other people's code.
 
 ### INDEX
+* [learning objectives](#learning-objectives)
 * completed examples
     * [for](#for)
     * [while](#while)
@@ -16,6 +24,16 @@
 
 ---
 
+## Learning Objectives
+
+* mastering JS loop syntax
+* identifying the 3 key components of an iteration
+* shifting easily between loop types
+* separating the __structure__ of written code from the __behavior__ of program data
+
+[TOP](#loop-refactors)
+
+---
 
 ## Completed Examples
 
